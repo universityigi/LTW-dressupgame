@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-Up/Login Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab "><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Style your Bunny!</h1>
+          
+          <form id="signup_form" name="myform">
+          
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name<span class="req">*</span>
+                </label>
+                <input  id="nome" name="nome" type="text" required autocomplete="off" onchange="return controllaNome()" />
+              </div>
+          
+              <div class="field-wrap">
+                <label>
+                  Last Name<span class="req">*</span>
+                </label>
+                <input id="cognome" name="cognome" type="text"required autocomplete="off" onchange="return controllaCognome()"/>
+              </div>
+            </div>
+          <div class="field-wrap">
+            <label>
+              Date of Birth<span class="req">*</span>
+            </label>
+            <input id="data" name="data" type="date"required autocomplete="off" onchange="return controllaData()"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input id="email" name="email" type="email"required autocomplete="off" onchange="return controllaMail()"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Pick a Username...<span class="req">*</span>
+            </label>
+            <input id="username" name="username" type="text"required autocomplete="off" onchange="controllaUsername()"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Pick a Password...<span class="req">*</span>
+            </label>
+            <input id="password" name="password" type="password"required autocomplete="off" onchange="return controllaPassword()"/>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Repeat Password...<span class="req">*</span>
+            </label>
+            <input name="rippassword" type="password"required autocomplete="off" onchange="return controllaRipPassword()"/>
+          </div>
+          <button id="goplay" type="submit" class="button button-block" >Go   Play!</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form id="signin_form">
+          
+           <div class="field-wrap">
+            <label>
+              Email<span class="req">*</span>
+            </label>
+            <input id="emaillogin" type="text"required autocomplete="off"/>
+           </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input id="passwordlogin" type="password"required autocomplete="off"/>
+          </div>
+        
+          
+          <button id="login" type="submit" class="button button-block">Log In</button>
+      
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+<script src='jquery-3.3.1.js'></script>
+<script  src="index.js"></script>
+<script  src="submit.js"></script>
+
+</body>
+</html>

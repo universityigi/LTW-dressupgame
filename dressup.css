@@ -1,0 +1,124 @@
+body{
+	background-color: #ffcdd2;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+img {
+	position: absolute;
+	margin-left: 15%;
+  	display:inline-block;
+	height:100%; 
+}
+
+
+button{
+	margin-top:20%;
+	background: rgba(255,66,129,0.664);
+	border: 0;
+	text-transform: uppercase;
+}
+
+ul{
+	list-style-type: none;
+	display:inline-block;
+}
+
+.character{
+	z-index: 0;   
+}
+
+#pant_button{
+	background-image: url(my-icons-collection/png/pants_4789.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border:0;
+	background-color: rgb(253,253,188);
+}
+#bed_button{
+	background-image: url(my-icons-collection/png/icons8-sleeping-in-bed-50.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border:0;
+	background-color: rgb(84,173,228);
+}
+
+#wardrobe_button{
+	background-image: url(my-icons-collection/png/closet.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border:0;
+	background-color: rgba(255,144,227,0.849);
+}
+
+#desk_button{
+	background-image: url(my-icons-collection/png/desk_icon-icons.com_54432.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgb(173,240,173);
+}
+
+#light_button{
+	background-image: url(my-icons-collection/png/lights.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgb(202,161,240);
+}
+
+#decoration_button{
+	background-image: url(my-icons-collection/png/magic-wand.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgb(95,255,255);
+}
+#shirts_img{
+  z-index: 2;
+}
+
+#pants_img{
+  	z-index: 1;
+}
+
+#beds_img{
+		margin-top: 30%;
+		margin-left: 45%;
+		z-index:-1000;
+		height: 45%;
+}
+
+#wardrobes_img{
+	left:21.53%;
+	z-index: -1005;
+	height: 100%;
+}
+
+.pavimento{
+	z-index:-2000;
+	height:80%;
+	margin-top: 30%;
+	right: 0%;
+}
+
+#desks_img{
+	z-index:-1000;
+	margin-bottom: 10%;
+	left: -13%;
+	height: 72.5%;
+	top:19.5%;
+
+}
+
+#lights_img{
+	z-index:3;
+	width:100%;
+	height:auto;
+	left:-2.95%;
+}
+
+#decorations_img{
+	z-index:-1006;
+	height:40.59%;
+	left:10.55%;
+	top:8.9%;
+
+}
